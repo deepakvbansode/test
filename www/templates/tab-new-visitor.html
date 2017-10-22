@@ -1,0 +1,48 @@
+<ion-view view-title="New Visitor">
+  <ion-content >
+    <form name="visitorForm" novalidate>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Full Name" name="full_name" ng-model="vp.full_name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Mobile</span>
+          <input type="number" placeholder="Mobile">
+        </label>
+        <label class="item item-input"> <!-- Replace this select with  -->
+          <span class="input-label">Purpose</span>
+          <select>
+            <option>Blue</option>
+            <option selected>Green</option>
+            <option>Red</option>
+          </select>
+        </label>
+        <label class="item item-input"> <!-- Replace this select with  -->
+          <span class="input-label">Visiting Whom</span>
+          <select>
+            <option>Blue</option>
+            <option selected>Green</option>
+            <option>Red</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Place</span>
+          <input type="text" placeholder="Place">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Date &amp; Time</span>
+          <input type="datetime-local" >
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Photo</span>
+          
+        </label>
+        <ion-icon name="contact" ios="ios-contact"></ion-icon>
+        <button class="button button-positive" ng-click="addVisitor()">
+            Add Visitor
+        </button>
+      </div>
+  </form>
+  </ion-content>
+</ion-view>

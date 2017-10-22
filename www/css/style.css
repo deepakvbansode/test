@@ -1,0 +1,5 @@
+/* Empty. Add your own CSS if you like */
+span.input-label:after {
+    content: ":";
+    float: right;
+}
